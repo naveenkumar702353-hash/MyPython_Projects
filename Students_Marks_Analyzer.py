@@ -12,7 +12,7 @@ Ph=np.array(students_data["Physics_marks"])
 Ch=np.array(students_data["Chemistry_marks"])
 M=np.array(students_data["Maths_marks"])
 student_average = (Ph + Ch + M) / 3
-class TAHL():
+class Analyzer():
     def marks(self,data):
         total=np.sum(data)
         average=np.mean(data)
@@ -20,7 +20,7 @@ class TAHL():
         lowest=np.min(data)
         return total,average,highest,lowest
 
-analyzer=TAHL()
+analyzer=Analyzer()
 p_total,p_avg,p_max,p_min=analyzer.marks(Ph)
 c_total,c_avg,c_max,c_min=analyzer.marks(Ch)
 m_total,m_avg,m_max,m_min=analyzer.marks(M)
